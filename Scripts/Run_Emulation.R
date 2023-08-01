@@ -1,3 +1,5 @@
+setwd(dir = "Scripts/")
+
 source("Global.R")
 source("ABM_Functions.R")
 source("Emulator_Functions.R")
@@ -12,7 +14,7 @@ steps <- 500
 N <- 100000
 infection_rate_range <- c(0.1, 0.2)
 recovery_rate_range <- c(0.05, 0.15)
-num_realisations <- 100
+num_realisations <- 10#100
 
 # Generate data by simulating ABM multiple times
 abm_data <- generate_ABM_data(record_frequency = record_frequency,
